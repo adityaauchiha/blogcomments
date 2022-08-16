@@ -1,0 +1,77 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+                                                                 /* related to post comment div  */
+
+.textareaheight{
+    width: 419px;
+    height: 101px;
+    font-size: 1.4rem;
+    font-family: cursive;
+    resize: none;
+}
+.commentdiv{
+    margin-top: 50px;
+    border-top: outset;
+    border-left: outset;
+    width: fit-content;
+    padding: 16px;
+    box-shadow: 3px 6px #dfdcdc;
+    border-radius: 1rem;
+}
+
+.infinite-scroll-component{
+    height: auto;
+    overflow: auto;
+}
+
+.imgwidth{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.rendercomments{
+display: flex;
+}
+.imgdiv{
+    margin-right: 20px;
+}
+
+.replybox{
+    border: 1px solid;
+    width: 279px;
+    height: 102px;
+}

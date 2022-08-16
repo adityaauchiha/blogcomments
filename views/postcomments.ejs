@@ -1,0 +1,63 @@
+<%- include('partials/header') -%> 
+
+
+<div class="commentdiv">   
+    <form action="/postcomments" method="post">
+      <div>
+        <h4>Add a new comment</h4>
+        <div>
+          <textarea class="textareaheight" name="postComment" placeholder="Type Your Comment..." ></textarea>
+        </div>
+        <div>
+          <button class="  btn btn-primary" type="submit" value=" commentbutton " name="postbutton">Post Comment</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  
+  <h3>Comments</h3>
+  
+   <div class="infinite-scroll-component">
+    
+  <div class="rendercomments">
+   
+  <div class="imgdiv">
+  
+    <img class="imgwidth " src="/images/userimg.png" alt="">
+  </div>
+  <div>
+    <% comments.forEach(comment => { %>
+      
+          <div class="replybox">
+        
+            
+             
+                                           <!-- value = item object above function  -->
+        <input type="hidden" name="listName" value="commentbutton"></input>
+            
+        <p><%=comment.comment %></p>
+              </div>
+              <button class="btn btn-primary" type="submit" name="button">Reply</button>
+              <% }) %>
+           
+            </div>
+          
+            
+            </div>
+   
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') -%> 
